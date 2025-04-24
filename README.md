@@ -2,7 +2,7 @@
 
 View the [demo here](https://geromes-portfolio-nextjs.vercel.app).
 
-![Geromes Portfolio](https://geromes-portfolio-nextjs.vercel.app/images/og/home.jpg)
+![Gerome’s Portfolio](https://github.com/user-attachments/assets/e4b73503-e265-40ff-a0f5-dcee7f1f5a52)
 
 
 # **Getting started**
