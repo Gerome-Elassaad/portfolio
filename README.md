@@ -2,7 +2,7 @@
 
 View the [demo here](https://geromes-portfolio-nextjs.vercel.app).
 
-![Magic Portfolio](https://geromes-portfolio-nextjs.vercel.app/images/og/home.jpg)
+![Geromes Portfolio](https://geromes-portfolio-nextjs.vercel.app/images/og/home.jpg)
 
 
 # **Getting started**
@@ -56,7 +56,7 @@ Add a new .mdx file to src/app/blog/posts or src/app/work/projects
 - Set up password protection for URLs
 
 ## **Localization**
-- A localized version of Magic Portfolio is available with the next-intl library
+- A localized version of Geromes Portfolio is available with the next-intl library
 - To use localization, switch to the 'i18n' branch
 
 # **Developer**
