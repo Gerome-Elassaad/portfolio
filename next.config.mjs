@@ -13,6 +13,16 @@ const nextConfig = {
     compiler: "modern",
     silenceDeprecations: ["legacy-js-api"],
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'deeprankai.com',
+        port: '',
+        pathname: '/images/**',
+      },
+    ],
+  },
 };
 
 export default withMDX(nextConfig);

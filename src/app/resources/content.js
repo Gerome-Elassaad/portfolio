@@ -51,7 +51,7 @@ const social = [
 
 const home = {
   path: "/",
-  image: "/images/og/home.jpg",
+  image: "/images/og/home.png",
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
@@ -59,7 +59,7 @@ const home = {
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">DeepRankAI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/deeprankai",
   },
   subline: (
     <>
@@ -70,7 +70,7 @@ const home = {
 };
 
 const about = {
-  path: "/about",
+  path: "/projects",
   label: "About",
   title: `About – ${person.name}`,
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
@@ -153,7 +153,7 @@ const about = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Studies",
     institutions: [
       {
@@ -171,12 +171,12 @@ const about = {
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Strengths",
     skills: [
       {
-        title: "AI",
-        description: <></>,
+        title: "Development",
+        description: <>Full Stack Web Application Developement</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -194,8 +194,8 @@ const about = {
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Supabase.</>,
+        title: "Design",
+        description: <>Building next gen web designs</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -275,4 +275,6 @@ const gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+const projects = [];
+
+export { person, projects, social, newsletter, home, about, blog, work, gallery };

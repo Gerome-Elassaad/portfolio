@@ -3,7 +3,7 @@ const baseURL = "https://geromes-portfolio-nextjs.vercel.app";
 
 const routes = {
   "/": true,
-  "/about": true,
+  "/projects": true,
   "/work": true,
   "/blog": true,
   "/gallery": true,

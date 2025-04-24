@@ -75,3 +75,4 @@ export * from "./ThemeSwitcher";
 export * from "./ThemeProvider";
 export * from "./User";
 export * from "./UserMenu";
+export * from "./Quote";
