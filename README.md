@@ -16,12 +16,12 @@ git clone https://github.com/Gerome-Elassaad/portfolio.git
 
 **2. Install dependencies**
 ```
-npm install
+pnpm install
 ```
 
 **3. Run dev server**
 ```
-npm run dev
+pnpm run dev
 ```
 
 **4. Edit config**

@@ -35,7 +35,7 @@ const social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/DeepRank-AI/",
+    link: "https://www.linkedin.com/",
   },
   {
     name: "X",
@@ -101,41 +101,51 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
+        company: "REDI Software Solutions",
+        timeframe: "Feb 2024 - Feb 2025 (1 year 1 month)",
         role: "Senior Software Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Design a scalable microservice architecture for a multi-tenant analytics platform,
+            including decisions on database sharding and API gateway structure.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Build and integrate a new payment processing module using Stripe API in the company’s SaaS
+            dashboard, ensuring it handles various edge cases (e.g., failed payments, refunds).
+          </>,
+          <>
+            Write integration tests for a RESTful API endpoint that handles bulk user uploads,
+            ensuring data validation, file parsing, and rollback on errors.
+          </>,
+          <>
+            Pair program with a junior developer to walk through their implementation of a new
+            authentication flow, pointing out improvements in security and code readability.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "REDI Software Solutions",
+        timeframe: "Feb 2021 - Feb 2024 (3 years 1 month)",
+        role: "Mid Level Software Engineer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            My day to day at Redi Software Solutions as a mid level engineer was mainly on
+            functionality and maintaining web applications and websites for clients and also bug
+            errors as well as new projects production code & UI UX experience
           </>,
+        ],
+        images: [],
+      },
+      {
+        company: "REDI Software Solutions",
+        timeframe: "Jan 2020 - Feb 2021 (1 year 2 months)",
+        role: "Junior Software Engineer",
+        achievements: [
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Jnr role at Redi Software Solutions involved learning and helping implement design
+            features for the demo applications as well as learning about API's and how to implement
+            them into production.
           </>,
         ],
         images: [],
@@ -147,12 +157,16 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
+        name: "Graduate IBM Software Engineering",
         description: <>Studied software engineering.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Google UI UX Design",
+        description: <>Studied UI UX design.</>,
+      },
+      {
+        name: "IBM Full Stack Javascript Developer",
+        description: <>Studied a variety of code languages and backend systems etc.</>,
       },
     ],
   },
