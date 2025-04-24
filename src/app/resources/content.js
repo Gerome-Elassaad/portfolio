@@ -55,10 +55,10 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Building apps that people love to use.</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
+    title: <>Recent project: <strong className="ml-4">DeepRankAI</strong></>,
     href: "/work/building-once-ui-a-customizable-design-system",
   },
   subline: (
@@ -176,7 +176,7 @@ const about = {
     skills: [
       {
         title: "AI",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        description: <></>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -195,7 +195,7 @@ const about = {
       },
       {
         title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        description: <>Building next gen apps with Next.js + Supabase.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -207,6 +207,12 @@ const about = {
         ],
       },
     ],
+  },
+  resume: {
+    display: true,
+    title: "Resume",
+    description: "Download my resume to learn more about my experience and qualifications.",
+    link: "/original-resume.pdf",
   },
 };
 

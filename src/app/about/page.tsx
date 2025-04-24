@@ -318,6 +318,22 @@ export default function About() {
               </Column>
             </>
           )}
+
+          {about.resume.display && (
+            <>
+              <Heading as="h2" id={about.resume.title} variant="display-strong-s" marginBottom="m">
+                {about.resume.title}
+              </Heading>
+              <Column fillWidth gap="l" marginBottom="40">
+                <Text variant="body-default-m" onBackground="neutral-weak">
+                  {about.resume.description}
+                </Text>
+                <Button href={about.resume.link} variant="primary" download>
+                  Download Resume
+                </Button>
+              </Column>
+            </>
+          )}
         </Column>
       </Flex>
     </Column>
