@@ -83,16 +83,16 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://cal.com/gerome-8faplf",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Gerome is a Australian-based Software Engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Hi, I am Gerome Elassaad—a passionate Software Engineer with a love for building clean, scalable, and user-focused web applications. 
+        I specialize in full stack development, with experience across frontend, backend, and infrastructure. 
+        Whether I am crafting sleek UIs or solving tough system-level bugs, I am all about creating smart tech that makes peoples lives a little easier.
       </>
     ),
   },
@@ -253,32 +253,22 @@ const gallery = {
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/horizontal-3.jpg",
+      src: "/images/gallery/horizontal-3.avif",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/horizontal-4.jpg",
+      src: "/images/gallery/horizontal-4.avif",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/vertical-1.jpg",
+      src: "/images/gallery/vertical-1.png",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
+      src: "/images/gallery/vertical-2.png",
       alt: "image",
       orientation: "vertical",
     },

@@ -9,12 +9,6 @@ const routes = {
   "/gallery": true,
 };
 
-// Enable password protection on selected routes
-// Set password in the .env file, refer to .env.example
-const protectedRoutes = {
-  "/work/automate-design-handovers-with-a-figma-to-code-pipeline": true,
-};
-
 import { Geist } from "next/font/google";
 import { Geist_Mono } from "next/font/google";
 
@@ -141,4 +135,4 @@ const mailchimp = {
   },
 };
 
-export { routes, protectedRoutes, effects, style, display, mailchimp, baseURL, font };
+export { routes, effects, style, display, mailchimp, baseURL, font };

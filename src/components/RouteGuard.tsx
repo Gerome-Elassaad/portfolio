@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { routes, protectedRoutes } from "@/app/resources";
+import { routes } from "@/app/resources";
 import { Flex, Spinner, Button, Heading, Column, PasswordInput } from "@/once-ui/components";
 import NotFound from "@/app/not-found";
 
@@ -45,16 +45,6 @@ const RouteGuard: React.FC<RouteGuardProps> = ({ children }) => {
 
       const routeEnabled = checkRouteEnabled();
       setIsRouteEnabled(routeEnabled);
-
-      if (protectedRoutes[pathname as keyof typeof protectedRoutes]) {
-        setIsPasswordRequired(true);
-
-        const response = await fetch("/api/check-auth");
-        if (response.ok) {
-          setIsAuthenticated(true);
-        }
-      }
-
       setLoading(false);
     };
 
