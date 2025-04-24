@@ -409,7 +409,7 @@ export const Kbar: React.FC<KbarProps> = ({ items, children, ...rest }) => {
     if (isOpen) {
       handleClose();
     }
-  }, [pathname]);
+  }, [pathname, isOpen]);
 
   // Add keyboard shortcut listener
   useEffect(() => {

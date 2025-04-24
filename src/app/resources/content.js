@@ -144,7 +144,7 @@ const about = {
         achievements: [
           <>
             Jnr role at Redi Software Solutions involved learning and helping implement design
-            features for the demo applications as well as learning about API's and how to implement
+            features for the demo applications as well as learning about API&#39;s and how to implement
             them into production.
           </>,
         ],

@@ -28,6 +28,13 @@ export async function generateMetadata() {
   });
 }
 
+interface ImageProps {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+}
+
 export default function About() {
   const structure = [
     {
@@ -97,7 +104,7 @@ export default function About() {
             </Flex>
             {person.languages.length > 0 && (
               <Flex wrap gap="8">
-                {person.languages.map((language, index) => (
+                {person.languages.map((language) => (
                   <Tag key={language} size="l">
                     {language}
                   </Tag>
@@ -219,22 +226,24 @@ export default function About() {
                     </Column>
                     {experience.images.length > 0 && (
                       <Flex fillWidth paddingTop="m" paddingLeft="40" wrap>
-                        {experience.images.map((image, index) => (
-                          <Flex
-                            key={index}
-                            border="neutral-medium"
-                            radius="m"
-                            minWidth={image.width}
-                            height={image.height}
-                          >
-                            <SmartImage
-                              enlarge
+                        {experience.images.map((image: ImageProps, index) => (
+                          image ? (
+                            <Flex
+                              key={index}
+                              border="neutral-medium"
                               radius="m"
-                              sizes={image.width.toString()}
-                              alt={image.alt}
-                              src={image.src}
-                            />
-                          </Flex>
+                              minWidth={image?.width}
+                              height={image?.height}
+                            >
+                              <SmartImage
+                                enlarge
+                                radius="m"
+                                sizes={image?.width?.toString()}
+                                alt={image?.alt}
+                                src={image?.src}
+                              />
+                            </Flex>
+                          ) : null
                         ))}
                       </Flex>
                     )}
@@ -283,22 +292,24 @@ export default function About() {
                     </Text>
                     {skill.images && skill.images.length > 0 && (
                       <Flex fillWidth paddingTop="m" gap="12" wrap>
-                        {skill.images.map((image, index) => (
-                          <Flex
-                            key={index}
-                            border="neutral-medium"
-                            radius="m"
-                            minWidth={image.width}
-                            height={image.height}
-                          >
-                            <SmartImage
-                              enlarge
+                        {skill.images.map((image: ImageProps, index) => (
+                          image ? (
+                            <Flex
+                              key={index}
+                              border="neutral-medium"
                               radius="m"
-                              sizes={image.width.toString()}
-                              alt={image.alt}
-                              src={image.src}
-                            />
-                          </Flex>
+                              minWidth={image?.width}
+                              height={image?.height}
+                            >
+                              <SmartImage
+                                enlarge
+                                radius="m"
+                                sizes={image?.width?.toString()}
+                                alt={image?.alt}
+                                src={image?.src}
+                              />
+                            </Flex>
+                          ) : null
                         ))}
                       </Flex>
                     )}
