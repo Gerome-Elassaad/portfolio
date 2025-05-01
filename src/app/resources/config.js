@@ -4,9 +4,9 @@ const baseURL = "https://geromes-portfolio-nextjs.vercel.app";
 const routes = {
   "/": true,
   "/projects": true,
-  "/work": true,
   "/blog": true,
   "/gallery": true,
+  "/work": true,
 };
 
 import { Geist } from "next/font/google";

@@ -63,8 +63,8 @@ const home = {
   },
   subline: (
     <>
-      I am Gerome, a Software Engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I am Gerome, a Software Engineer, where I craft intuitive,
+      <br /> user experiences & technical applications. After hours, I build my own projects.
     </>
   ),
 };
@@ -213,6 +213,48 @@ const about = {
     title: "Resume",
     description: "Download my resume to learn more about my experience and qualifications.",
     link: "/original-resume.pdf",
+  },
+  techStacks: {
+    display: true,
+    title: "Tech Stacks",
+    frontend: [
+      "Tailwind",
+      "Typescript",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Python",
+      "Next.js",
+      "React",
+      "Angular",
+      "Nuxt.js",
+      "Vue.js",
+      "Javascript",
+      "Framer",
+    ],
+    backend: [
+      "Express.js",
+      "NestJS",
+      "Firebase",
+      ".Net Core",
+      "Laveral",
+      "FastAPI",
+      "Supabase",
+      "MySQL",
+      "Postgres",
+      "Oracle DB",
+    ],
+    Integrations: [
+      "OpenAI",
+      "Claude",
+      "Grok",
+      "AI/SDK",
+      "Googles Gemini",
+      "Wordpress",
+      "Shopify",
+      "BigCommerce",
+      "Many More..."
+    ],
   },
 };
 

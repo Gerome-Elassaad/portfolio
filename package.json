@@ -46,5 +46,17 @@
     "postcss-custom-media": "^10.0.8",
     "postcss-flexbugs-fixes": "^5.0.2",
     "typescript": "^5.8.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher"
+    ],
+    "ignoredBuiltDependencies": [
+      "gifsicle",
+      "jpegtran-bin",
+      "optipng-bin",
+      "sharp",
+      "unrs-resolver"
+    ]
   }
 }

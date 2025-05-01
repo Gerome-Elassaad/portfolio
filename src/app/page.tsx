@@ -194,6 +194,43 @@ export default function About() {
 
           <IconCloudDemo />
 
+          {about.techStacks.display && (
+            <>
+              <Column marginBottom="40"/>
+              <Heading as="h2" id={about.techStacks.title} variant="display-strong-s" marginBottom="40">
+                {about.techStacks.title}
+              </Heading>
+              <Column fillWidth gap="l">
+                <Text variant="heading-strong-l">Frontend</Text>
+                <Flex wrap gap="8">
+                  {about.techStacks.frontend.map((tech, index) => (
+                    <Tag key={`${tech}-${index}`} size="l">
+                      {tech}
+                    </Tag>
+                  ))}
+                </Flex>
+                <Text variant="heading-strong-l">Backend</Text>
+                <Flex wrap gap="8">
+                  {about.techStacks.backend.map((tech, index) => (
+                    <Tag key={`${tech}-${index}`} size="l">
+                      {tech}
+                    </Tag>
+                  ))}
+                </Flex>
+                 <Text variant="heading-strong-l">Integrations</Text>
+                <Flex wrap gap="8">
+                  {about.techStacks.Integrations.map((tech, index) => (
+                    <Tag key={`${tech}-${index}`} size="l">
+                      {tech}
+                    </Tag>
+                  ))}
+                </Flex>
+              </Column>
+            </>
+          )}
+          
+          <Column marginBottom="40"/>
+
           {about.work.display && (
             <>
               <Heading as="h2" id={about.work.title} variant="display-strong-s" marginBottom="m">
@@ -252,6 +289,7 @@ export default function About() {
               </Column>
             </>
           )}
+
 
           {about.studies.display && (
             <>
