@@ -35,6 +35,12 @@ interface ImageProps {
   height: number;
 }
 
+interface TechnicalSkill {
+  title: string;
+  description: string;
+  images?: ImageProps[];
+}
+
 export default function About() {
   const structure = [
     {
@@ -51,11 +57,6 @@ export default function About() {
       title: about.studies.title,
       display: about.studies.display,
       items: about.studies.institutions.map((institution) => institution.name),
-    },
-    {
-      title: about.technical.title,
-      display: about.technical.display,
-      items: about.technical.skills.map((skill) => skill.title),
     },
   ];
   return (
@@ -194,40 +195,8 @@ export default function About() {
 
           <IconCloudDemo />
 
-          {about.techStacks.display && (
-            <>
-              <Column marginBottom="40"/>
-              <Heading as="h2" id={about.techStacks.title} variant="display-strong-s" marginBottom="40">
-                {about.techStacks.title}
-              </Heading>
-              <Column fillWidth gap="l">
-                <Text variant="heading-strong-l">Frontend</Text>
-                <Flex wrap gap="8">
-                  {about.techStacks.frontend.map((tech, index) => (
-                    <Tag key={`${tech}-${index}`} size="l">
-                      {tech}
-                    </Tag>
-                  ))}
-                </Flex>
-                <Text variant="heading-strong-l">Backend</Text>
-                <Flex wrap gap="8">
-                  {about.techStacks.backend.map((tech, index) => (
-                    <Tag key={`${tech}-${index}`} size="l">
-                      {tech}
-                    </Tag>
-                  ))}
-                </Flex>
-                 <Text variant="heading-strong-l">Integrations</Text>
-                <Flex wrap gap="8">
-                  {about.techStacks.Integrations.map((tech, index) => (
-                    <Tag key={`${tech}-${index}`} size="l">
-                      {tech}
-                    </Tag>
-                  ))}
-                </Flex>
-              </Column>
-            </>
-          )}
+          {/* This section is now replaced by the about.technical.display section below */}
+          {/* {about.techStacks.display && ( ... )} */}
           
           <Column marginBottom="40"/>
 
@@ -263,7 +232,7 @@ export default function About() {
                     </Column>
                     {experience.images.length > 0 && (
                       <Flex fillWidth paddingTop="m" paddingLeft="40" wrap>
-                        {experience.images.map((image: ImageProps, index) => (
+                        {experience.images.map((image: ImageProps, index: number) => (
                           image ? (
                             <Flex
                               key={index}
@@ -337,18 +306,20 @@ export default function About() {
                 {about.technical.title}
               </Heading>
               <Column fillWidth gap="l">
-                {about.technical.skills.map((skill, index) => (
-                  <Column key={`${skill}-${index}`} fillWidth gap="4">
+                {about.technical.skills.map((skill: TechnicalSkill, index: number) => (
+                  <Column key={`${skill.title}-${index}`} fillWidth gap="4">
                     <Text variant="heading-strong-l">{skill.title}</Text>
                     <Text variant="body-default-m" onBackground="neutral-weak">
+                      {/* If skill.description is an array of strings, map it to Tags or join to a string */}
+                      {/* Assuming skill.description is a string as per content.js modification */}
                       {skill.description}
                     </Text>
                     {skill.images && skill.images.length > 0 && (
                       <Flex fillWidth paddingTop="m" gap="12" wrap>
-                        {skill.images.map((image: ImageProps, index) => (
+                        {skill.images.map((image: ImageProps, imgIndex: number) => (
                           image ? (
                             <Flex
-                              key={index}
+                              key={imgIndex}
                               border="neutral-medium"
                               radius="m"
                               minWidth={image?.width}

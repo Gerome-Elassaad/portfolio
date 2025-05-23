@@ -9,8 +9,8 @@ const person = {
   role: "Software Engineer",
   avatar: "/images/avatar.jpg",
   email: "gerome.e24@gmail.com",
-  location: "Australia/Sydney", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English"], // optional: Leave the array empty if you don't want to display languages
+  location: "Australia/Sydney",
+  languages: ["English"],
 };
 
 const newsletter = {
@@ -25,8 +25,6 @@ const newsletter = {
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
   {
     name: "GitHub",
     icon: "github",
@@ -55,7 +53,7 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building apps that people love to use.</>,
+  headline: <>Solo Launched Projects.</>,
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">DeepRankAI</strong></>,
@@ -170,90 +168,31 @@ const about = {
       },
     ],
   },
-  technical: {
-    display: true,
-    title: "Strengths",
-    skills: [
-      {
-        title: "Development",
-        description: <>Full Stack Web Application Developement</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Design",
-        description: <>Building next gen web designs</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-    ],
-  },
   resume: {
     display: true,
     title: "Resume",
     description: "Download my resume to learn more about my experience and qualifications.",
     link: "/original-resume.pdf",
   },
-  techStacks: {
+  technical: { // Renamed from techStacks
     display: true,
-    title: "Tech Stacks",
-    frontend: [
-      "Tailwind",
-      "Typescript",
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Python",
-      "Next.js",
-      "React",
-      "Angular",
-      "Nuxt.js",
-      "Vue.js",
-      "Javascript",
-      "Framer",
-    ],
-    backend: [
-      "Express.js",
-      "NestJS",
-      "Firebase",
-      ".Net Core",
-      "Laveral",
-      "FastAPI",
-      "Supabase",
-      "MySQL",
-      "Postgres",
-      "Oracle DB",
-    ],
-    Integrations: [
-      "OpenAI",
-      "Claude",
-      "Grok",
-      "AI/SDK",
-      "Googles Gemini",
-      "Wordpress",
-      "Shopify",
-      "BigCommerce",
-      "Many More..."
+    title: "Technical Skills", // Updated title
+    skills: [ // Restructured into a skills array
+      {
+        title: "Frontend",
+        description: "Tailwind, Typescript, HTML, CSS, JavaScript, Python, Next.js, React, Angular, Nuxt.js, Vue.js, Flutter.dev",
+        // images: [], // Optional: add images if needed
+      },
+      {
+        title: "Backend",
+        description: "Express.js, NestJS, Firebase, .Net Core, Laravel, FastAPI, Supabase, MySQL, Postgres, Oracle DB",
+        // images: [], // Optional: add images if needed
+      },
+      {
+        title: "Integrations",
+        description: "OpenAI, Claude, Grok, AI/SDK (Vercel), Google's Gemini / GCP, Anthropic, Wordpress, Shopify, BigCommerce, and many more.",
+        // images: [], // Optional: add images if needed
+      },
     ],
   },
 };
@@ -276,47 +215,8 @@ const work = {
   // All projects will be listed on the /home and /work routes
 };
 
-const gallery = {
-  path: "/gallery",
-  label: "Gallery",
-  title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
-  images: [
-    {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-3.avif",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.avif",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.png",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-2.png",
-      alt: "image",
-      orientation: "vertical",
-    },
-  ],
-};
-
 const projects = [];
+
+const gallery = [];
 
 export { person, projects, social, newsletter, home, about, blog, work, gallery };

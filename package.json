@@ -19,6 +19,7 @@
     "gray-matter": "^4.0.3",
     "imagemin-cli": "^8.0.0",
     "jpegtran-bin": "^7.0.0",
+    "lucide-react": "^0.511.0",
     "next": "^15.3.1",
     "next-mdx-remote": "^5.0.0",
     "next-themes": "^0.4.6",
