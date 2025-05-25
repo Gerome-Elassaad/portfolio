@@ -23,3 +23,30 @@ Improvements_Identified_For_Consolidation:
 - General pattern: When refactoring data structures, ensure all consuming code is updated simultaneously or in close succession to avoid cascading errors. Pay attention to both property access and rendering logic.
 - TypeScript: Always define interfaces for shared object structures and use explicit types for function parameters, especially in callbacks.
 ---
+---
+Date: 2025-05-25
+TaskRef: "Add Product Hunt embed to deeprankai.mdx and fix DOM property errors"
+
+Learnings:
+- When embedding HTML (like an iframe) in MDX/JSX, HTML attributes often need to be camelCased to be valid DOM properties in React.
+  - `frameborder` should be `frameBorder`.
+  - `allowfullscreen` should be `allowFullScreen`.
+- The `style` prop in JSX expects a JavaScript object, not a string.
+  - `style="border: none;"` should be `style={{border: "none"}}`.
+- This is a common convention in React and similar JavaScript frameworks that use JSX.
+
+Difficulties:
+- Initially used standard HTML attribute casing (`frameborder`, `allowfullscreen`) which caused a "Invalid DOM property" error in the Next.js/React environment.
+- Subsequently, used a string for the `style` prop, which caused an "Invalid `style` prop" error.
+
+Successes:
+- Successfully identified the casing issue from the error message.
+- Correctly updated the attributes to `frameBorder` and `allowFullScreen` in the `iframe` tag within the `.mdx` file.
+- Successfully identified the `style` prop issue from the error message.
+- Correctly updated the `style` prop to use object syntax `style={{border: "none"}}`, resolving all errors.
+
+Improvements_Identified_For_Consolidation:
+- General pattern: When working with HTML elements in JSX/MDX:
+    - Always use camelCase for multi-word attributes (e.g., `frameBorder`, `readOnly`, `autoPlay`, `allowFullScreen`).
+    - The `style` prop must be an object (e.g., `style={{ marginRight: '10px', color: 'blue' }}`).
+---

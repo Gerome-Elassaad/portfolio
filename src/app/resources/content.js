@@ -1,4 +1,4 @@
-import { Logo } from "@/once-ui/components";
+import React from "react";
 
 const person = {
   firstName: "Gerome",
@@ -174,24 +174,21 @@ const about = {
     description: "Download my resume to learn more about my experience and qualifications.",
     link: "/original-resume.pdf",
   },
-  technical: { // Renamed from techStacks
+  technical: {
     display: true,
-    title: "Technical Skills", // Updated title
-    skills: [ // Restructured into a skills array
+    title: "Technical Skills",
+    skills: [
       {
         title: "Frontend",
         description: "Tailwind, Typescript, HTML, CSS, JavaScript, Python, Next.js, React, Angular, Nuxt.js, Vue.js, Flutter.dev",
-        // images: [], // Optional: add images if needed
       },
       {
         title: "Backend",
         description: "Express.js, NestJS, Firebase, .Net Core, Laravel, FastAPI, Supabase, MySQL, Postgres, Oracle DB",
-        // images: [], // Optional: add images if needed
       },
       {
         title: "Integrations",
         description: "OpenAI, Claude, Grok, AI/SDK (Vercel), Google's Gemini / GCP, Anthropic, Wordpress, Shopify, BigCommerce, and many more.",
-        // images: [], // Optional: add images if needed
       },
     ],
   },
@@ -211,8 +208,6 @@ const work = {
   label: "Work",
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
 };
 
 const projects = [];

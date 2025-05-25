@@ -79,14 +79,18 @@ export default async function Project({
         <Heading variant="display-strong-s">{post.metadata.title}</Heading>
       </Column>
       {post.metadata.images.length > 0 && (
-        <SmartImage
-          priority
-          aspectRatio="16 / 9"
-          radius="m"
-          alt="image"
-          src={post.metadata.images[0]}
-        />
+        <>
+          <SmartImage
+            priority
+            aspectRatio="16 / 9"
+            radius="m"
+            alt="image"
+            src={post.metadata.images[0]}
+          />
+          <iframe style={{ border: "none" }} src="https://cards.producthunt.com/cards/products/853143" width="500" height="405" frameBorder="0" scrolling="no" allowFullScreen></iframe>
+        </>
       )}
+
       <Column style={{ margin: "auto" }} as="article" maxWidth="xs">
         <Flex gap="12" marginBottom="24" vertical="center">
           {post.metadata.team && <AvatarGroup reverse avatars={avatars} size="m" />}
