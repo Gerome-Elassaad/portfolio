@@ -1,6 +1,6 @@
-# **Portfolio by Gerome Elassaad**
+# **Gerome Elassaad**
 
-View the [demo here](https://geromes-portfolio-nextjs.vercel.app).
+View [Portfolio](https://geromes-portfolio-nextjs.vercel.app).
 
 ![Gerome’s Portfolio](https://github.com/user-attachments/assets/e4b73503-e265-40ff-a0f5-dcee7f1f5a52)
 
