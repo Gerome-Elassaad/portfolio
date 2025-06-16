@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import Image from "next/image";
 import { baseURL } from "@/app/resources";
 import { person } from "@/app/resources/content";
 
@@ -50,11 +51,12 @@ export async function GET(request: Request) {
             gap: "5rem",
           }}
         >
-          <img
+          <Image
+            alt="" // Assuming decorative, add descriptive alt text if not
             src={baseURL + person.avatar}
+            width={192} // 12rem * 16px/rem (assuming 1rem = 16px for ImageResponse)
+            height={192} // 12rem * 16px/rem
             style={{
-              width: "12rem",
-              height: "12rem",
               objectFit: "cover",
               borderRadius: "100%",
             }}

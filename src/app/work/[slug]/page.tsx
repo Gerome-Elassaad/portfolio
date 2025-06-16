@@ -87,7 +87,6 @@ export default async function Project({
             alt="image"
             src={post.metadata.images[0]}
           />
-          <iframe style={{ border: "none" }} src="https://cards.producthunt.com/cards/products/853143" width="500" height="405" frameBorder="0" scrolling="no" allowFullScreen></iframe>
         </>
       )}
 

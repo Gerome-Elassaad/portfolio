@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { Flex, SmartImage, IconButton } from ".";
 import styles from "./CompareImage.module.scss";
 
@@ -59,13 +59,13 @@ export const CompareImage = ({ leftContent, rightContent, ...rest }: CompareImag
     setPosition(newPosition);
   };
 
-  const handleMouseMove = (e: MouseEvent) => {
+  const handleMouseMove = useCallback((e: MouseEvent) => {
     updatePosition(e.clientX);
-  };
+  }, []);
 
-  const handleTouchMove = (e: TouchEvent) => {
+  const handleTouchMove = useCallback((e: TouchEvent) => {
     updatePosition(e.touches[0].clientX);
-  };
+  }, []);
 
   useEffect(() => {
     document.addEventListener("mousemove", handleMouseMove);
