@@ -99,7 +99,7 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "REDI Software Solutions",
+        company: "BetaTesting (EarliBird Nest Inc.)",
         timeframe: "Feb 2024 - Feb 2025 (1 year 1 month)",
         role: "Senior Software Engineer",
         achievements: [
@@ -123,12 +123,12 @@ const about = {
         images: [],
       },
       {
-        company: "REDI Software Solutions",
+        company: "BetaTesting (EarliBird Nest Inc.)",
         timeframe: "Feb 2021 - Feb 2024 (3 years 1 month)",
         role: "Mid Level Software Engineer",
         achievements: [
           <>
-            My day to day at Redi Software Solutions as a mid level engineer was mainly on
+            My day to day at BetaTesting (EarliBird Nest Inc.) as a mid level engineer was mainly on
             functionality and maintaining web applications and websites for clients and also bug
             errors as well as new projects production code & UI UX experience
           </>,
@@ -136,12 +136,12 @@ const about = {
         images: [],
       },
       {
-        company: "REDI Software Solutions",
+        company: "BetaTesting (EarliBird Nest Inc.)",
         timeframe: "Jan 2020 - Feb 2021 (1 year 2 months)",
         role: "Junior Software Engineer",
         achievements: [
           <>
-            Jnr role at Redi Software Solutions involved learning and helping implement design
+            Jnr role at BetaTesting (EarliBird Nest Inc.) involved learning and helping implement design
             features for the demo applications as well as learning about API&#39;s and how to implement
             them into production.
           </>,
@@ -172,7 +172,7 @@ const about = {
     display: true,
     title: "Resume",
     description: "Download my resume to learn more about my experience and qualifications.",
-    link: "/original-resume.pdf",
+    link: "#",
   },
   technical: {
     display: true,
